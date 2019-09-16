@@ -1,8 +1,32 @@
-h1 {
-    color: aqua
+
+
+.header {
+    position: fixed;
+    width: 1500px;
+    height: 73px;
+    background-color: #575757;
 }
 
-button {
-    color: blueviolet;
-    border-radius: 10%
+.sipster {
+    width: 7em;
+    margin: 0 auto;
+    font-family: Lobster;
+    font-size: 2em;
+    text-align: center;
+}
+
+.sipster h1 {
+    position: absolute;
+    margin: 0px;
+    color: #3debd1;
+}
+
+.header-nav {
+    text-align: center;
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
 }
