@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 'use strict';
 
 const navSlide = () => {
@@ -19,4 +18,3 @@ const navSlide = () => {
 
 navSlide();
 
-console.log('hello');
