@@ -1,32 +1,105 @@
-
-
-.header {
-    position: fixed;
-    width: 1500px;
-    height: 73px;
-    background-color: #575757;
-}
-
-.sipster {
-    width: 7em;
-    margin: 0 auto;
-    font-family: Lobster;
-    font-size: 2em;
-    text-align: center;
-}
-
-.sipster h1 {
-    position: absolute;
+* {
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #575757;
+    font-family: 'Lobster', sans-serif;
+}
+
+.logo {
+    letter-spacing: 1px;
+    font-size: 3em;
+}
+
+.logo a {
+    text-decoration: none;
     color: #3debd1;
 }
 
-.header-nav {
-    text-align: center;
-    float: right;
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style-type: none;
 }
 
-.nav-item {
-    display: inline-block;
-    list-style-type: none;
+.nav-links a {
+    color: #3debd1;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 1.7em;
+    height: .25em;
+    background-color: #3debd1;
+    margin: 5px;
+}
+
+@media screen and (max-width:800px){
+    .nav-links {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width:760px){
+    body {
+        overflow-X: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #575757;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+    }
+
+    .nav-links li{
+        opacity: 0%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+        
+    }
+}
+
+.toggle .line-1 {
+
 }
