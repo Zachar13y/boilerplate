@@ -7,7 +7,7 @@
     background-color: #575757;
 }
 
-.sipster {
+.logo {
     width: 7em;
     margin: 0 auto;
     font-family: Lobster;
@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.sipster h1 {
+.logo h1 {
     position: absolute;
     margin: 0px;
     color: #3debd1;
@@ -23,7 +23,7 @@
 
 .header-nav {
     text-align: center;
-    font-family: Lobster;
+    font-family: 'Lobster';
     top: 60%;
     right:50%;
     margin: 4px;
