@@ -25,3 +25,16 @@ const navSlide = () => {
 
 navSlide();
 
+const cycleImages = () => {
+  const index = 0;
+  const wallImage = document.querySelector('.background-img');
+
+  setInterval(function () {
+    index = index + 1 < wallImage.length ? index + 1 : 0;
+    wallImage.eq(index).addClass('show');
+    wallImage.eq(index - 1).removeClass('show');
+  }, 2000);
+};
+
+cycleImages();
+
