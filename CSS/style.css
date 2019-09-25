@@ -121,9 +121,21 @@ nav {
     transform: rotate(45deg) translate(-6px, -6px);
 }
 
+
+
+
 .background-img {
     width: 900px;
     background-position: center center;
     background-repeat: no-repeat;
     
+}
+
+.toggle-img {
+    transition: opacity 1s ease-in-out;
+}
+
+.first-img {
+    background-image: 
+    src()
 }
