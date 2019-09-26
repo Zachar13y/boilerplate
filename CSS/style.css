@@ -16,6 +16,7 @@ nav {
     min-height: 8vh;
     background-color: #575757;
     font-family: 'Lobster', sans-serif;
+    z-index: 100;
 }
 
 .logo {
@@ -121,21 +122,21 @@ nav {
     transform: rotate(45deg) translate(-6px, -6px);
 }
 
-
+.background {
+    position: absolute;
+    margin: 3.56em 2em 2em 0em;
+    padding-top: 1em;
+    
+}
 
 
 .background-img {
     width: 900px;
     background-position: center center;
     background-repeat: no-repeat;
-    
 }
 
 .toggle-img {
     transition: opacity 1s ease-in-out;
 }
 
-.first-img {
-    background-image: 
-    src()
-}
