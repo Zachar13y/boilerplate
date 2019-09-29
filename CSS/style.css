@@ -140,3 +140,24 @@ nav {
     transition: opacity 1s ease-in-out;
 }
 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon {
+    width: 2.5em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-trifecta {
+    display: inline-block;
+    /* align-content: center; */
+    width: 33%;
+}
