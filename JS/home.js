@@ -27,13 +27,11 @@ navSlide();
 
 
 
-
 function cycleImages() {
   const index = 0;
 
-  const wallImage = document.querySelectorAll('.toggle-img');
+  var wallImage = document.querySelectorAll('.toggle-img');
 
-  // eslint-disable-next-line no-console
   console.log(wallImage);
   setInterval(function () {
     index = index + 1 < wallImage.length ? index + 1 : 0;

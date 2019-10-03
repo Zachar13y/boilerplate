@@ -124,9 +124,9 @@ nav {
 
 .background {
     position: absolute;
-    margin: 3.56em 2em 2em 0em;
+    margin: 3.1em 0em 0em 0em;
     padding-top: 1em;
-    
+    /* justify-content: center; */
 }
 
 .background-img {
@@ -145,12 +145,12 @@ nav {
 }
 
 .discover {
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
-    transform: translate(50%, 50%)
-    /* justify-content: center;
-    z-index: 101; */
+    transform: translate(50%, 50%);
+    justify-content: center;
+    /* z-index: 101; */
 }
 
 .footer {
@@ -166,13 +166,17 @@ nav {
 }
 
 .footer-container {
-    /* display: block; */
     position: absolute;
     margin: 0 auto;
-    /* padding-top: 40px; */
     justify-content: space-between;
     text-align: center;
 }
+
+.footer-container div h2 {
+    margin: 20px;
+}
+
+
 
 .icon-wrapper {
     display: flex;
@@ -185,4 +189,13 @@ nav {
     padding: 10px;
     align-content: center;
     width: 33%;
+}
+
+@media screen and (max-width:800px) {
+    .footer-trifecta {
+        flex-direction: column;
+        /* display: flex; */
+        float: none;
+        width: 100%;
+    }
 }
