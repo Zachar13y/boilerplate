@@ -79,7 +79,7 @@ nav {
         align-items: center;
         width: 40%;
         transform: translateX(100%);
-        transition: transformX 0.4s ease-in; 
+        transition: transform .4s ease-in; 
     }
 
 
@@ -103,10 +103,10 @@ nav {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to{
         opacity: 1;
         transform: translateX(0px);
-        
     }
 }
 
@@ -126,7 +126,6 @@ nav {
     position: absolute;
     margin: 3.1em 0em 0em 0em;
     padding-top: 1em;
-    /* justify-content: center; */
 }
 
 .background-img {
@@ -150,7 +149,6 @@ nav {
     left: 50%;
     transform: translate(50%, 50%);
     justify-content: center;
-    /* z-index: 101; */
 }
 
 .footer {

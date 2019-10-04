@@ -20,7 +20,6 @@ const navSlide = () => {
     });
     burger.classList.toggle('toggle');
   });
-
 };
 
 navSlide();
@@ -32,7 +31,6 @@ function cycleImages() {
 
   var wallImage = document.querySelectorAll('.toggle-img');
 
-  console.log(wallImage);
   setInterval(function () {
     index = index + 1 < wallImage.length ? index + 1 : 0;
 
